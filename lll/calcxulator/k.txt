@@ -1,0 +1,4 @@
+flex lexexp.l
+bison -d yaccexp.y
+gcc lex.yy.c yaccexp.tab.c -o calculator -lm
+./calculator
